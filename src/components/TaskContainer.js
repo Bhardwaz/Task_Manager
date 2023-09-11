@@ -117,7 +117,9 @@ const TaskContainer = ({
             >
               Save
             </button>
-          ) : (
+          ) : user?.userRole === "Admin" ||
+            user?.userRole === "Head Coach" ||
+            user?.userRole === "Controller" ? (
             <button
               onClick={() => setEdit(!edit)}
               type="button"
@@ -125,7 +127,7 @@ const TaskContainer = ({
             >
               Edit
             </button>
-          )}
+          ) : null}
           {user?.userRole === "Admin" || user?.userRole === "Controller" ? (
             <button
               onClick={() => deleteTask()}
