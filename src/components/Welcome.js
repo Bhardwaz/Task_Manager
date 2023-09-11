@@ -48,12 +48,14 @@ const Welcome = () => {
           Hii Welcome {user?.userRole}, {user?.name}{" "}
         </p>
         <div className="flex justify-around gap-4">
-          <button
-            onClick={() => navigate("/allUsers")}
-            className="bg-green-400 text-lg font-bold rounded-lg p-1 cursor-pointer text-center transition-transform transform hover:scale-105 active:scale-95 hover:bg-[#2B292E] hover:text-white"
-          >
-            All Users
-          </button>
+          {user?.userRole === "Admin" ? (
+            <button
+              onClick={() => navigate("/allUsers")}
+              className="bg-green-400 text-lg font-bold rounded-lg p-1 cursor-pointer text-center transition-transform transform hover:scale-105 active:scale-95 hover:bg-[#2B292E] hover:text-white"
+            >
+              All Users
+            </button>
+          ) : null}
           <button
             className="bg-green-400 text-lg font-bold rounded-lg p-1 cursor-pointer text-center transition-transform transform hover:scale-105 active:scale-95 hover:bg-[#2B292E] hover:text-white"
             onClick={() => {
