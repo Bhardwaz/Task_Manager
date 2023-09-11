@@ -8,25 +8,25 @@
       "id": 1
     },
     {
-      "name": "Controller jii",
-      "email": "control@123",
-      "encryptedPass": "$2a$10$KHobStXt/62IIQpNvmjR7eA.02HKl1jqqFx3FkcdozLwmt/WQ.FDi",
-      "userRole": "Controller",
-      "id": 2
-    },
-    {
-      "name": "Head Coach Jii",
+      "name": "Sunny",
       "email": "head@123",
       "encryptedPass": "$2a$10$yZZiCwRF.mbjxSc3WB7So.5j/aT2KyEWXVVarIQEV8tgXZQDqvrHe",
       "userRole": "Head Coach",
       "id": 3
     },
     {
-      "name": "Coach Jii",
+      "name": "pranjal",
       "email": "coach@123",
       "encryptedPass": "$2a$10$3aavQlM4Ei1t8.tLcZ7pXOacpYODgGto7JHlElPddGHfzGda/bxAO",
       "userRole": "Coach",
       "id": 4
+    },
+    {
+      "name": "Amit",
+      "email": "control@123",
+      "encryptedPass": "$2a$10$TM4Son4M/SMeXiHHcM50dOML90WWh7eFs4PbAt5l8Cv7tH0JKRYlK",
+      "userRole": "Controller",
+      "id": 5
     }
   ],
   "tasks": [

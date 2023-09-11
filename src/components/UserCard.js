@@ -18,8 +18,10 @@ const UserCard = ({ user }) => {
         `http://localhost:3001/allUsers/${user.id}`,
         {
           userRole: selectedValue,
-        }
+        },
+        config
       );
+      console.log(data);
       toast.success("user role updated successfully", {
         duration: 3000,
         autoClose: true,
